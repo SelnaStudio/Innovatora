@@ -207,7 +207,7 @@ function goTo(n){
 function resetTimer(){clearInterval(timer);timer=setInterval(function(){goTo((current+1)%PHOTOS.length);},2000);}
 resetTimer();
 var grid=document.getElementById('portGrid');
-[1,6,7,15,10].forEach(function(i){var p=PHOTOS[i];
+[1,6,15,7,10].forEach(function(i){var p=PHOTOS[i];
   var foto=document.createElement('div');foto.className='foto';
   var inner=document.createElement('div');inner.className='foto-inner';
   var img=document.createElement('img');img.src='data:image/jpeg;base64,'+p.b64;img.alt=p.caption;img.loading='lazy';
